@@ -12,7 +12,7 @@ function useSearch() {
 
   const getSearchOption = (value: string) => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=5&appid=${API_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=5&appid=${API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => setOptions(data))
