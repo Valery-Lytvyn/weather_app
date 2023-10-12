@@ -15,7 +15,7 @@ function HourlyForecast({ list }: HourlyForecastProps): JSX.Element {
             {icon && (
               <div className="w-[32px] h-[32px]">
                 <img
-                  src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+                  src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
                   alt={`weather-icon-${weather[0].description}`}
                   loading="lazy"
                 />
